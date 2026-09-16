@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    background-color: #d8caca;
+}
+/* Header */
 header {
     background-color: #d8caca;
     display: flex;
@@ -27,9 +30,8 @@ nav ul {
     align-items: flex-start;
     gap: 2px;
     margin-left: 90px;
-    margin-right: 60px;
+    margin-right: 500px;
 }
-
 @media (min-width: 768px) {
     nav ul {
         flex-direction: row;
@@ -43,5 +45,36 @@ nav ul li a {
     color: black
 }
 nav {
+    font-family: "Kalam", cursive;
+}
+
+/* Hero */
+.hero img {
+    width: 100%;
+    display: block;
+}
+.hero {
+    position: relative;
+}
+.hero-text {
+    color: black;
+    padding: 30px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .hero-text {
+        position: absolute;
+        top: 750px;
+        left: 20px;
+        color: white;
+    }
+}
+.btn {
+    display: inline-block;
+    background-color: #b08a8a;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
     font-family: "Kalam", cursive;
 }
