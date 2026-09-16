@@ -89,3 +89,41 @@ nav {
     border-radius: 8px;
     margin-top: 20px;
 }
+/* Aktiviteter */
+.aktiviteter {
+    text-align: center;
+    margin-top: 20px;
+}
+.bildraden {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+@media (min-width: 768px) {
+ .bildraden {
+    flex-direction: row;
+    padding: 50px;
+ }   
+}
+.bild {
+    border-radius: 8px;
+    flex: 1;
+    overflow: hidden;
+    padding: 15px;
+}
+.bild img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.bild h3 {
+    background-color: white;
+    padding: 15px 15px 0 15px;
+    border-radius: 12px 12px 0 0;
+}
+.bild p {
+    background-color: white;
+    padding: 0 15px 15px 15px;
+    border-radius: 0 0 12px 12px;
+}
